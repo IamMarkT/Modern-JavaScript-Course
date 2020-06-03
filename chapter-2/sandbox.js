@@ -1,16 +1,30 @@
-// changable variable : let
-let age = 22;
-let year = 2020;
+// strings
+console.log('hello, world');
 
-console.log(age, year);
+let email = 'markt1084@example.email.com'
+console.log(email);
 
-age = 30;
-console.log(age, year);
+//string concatentation
+let firstName = 'Mark';
+let lastName = 'Trinidad';
 
-// NONchangable variable : const
-const points = 100;
-console.log(points);
+let fullName = firstName + " " + lastName;
+console.log(fullName);
 
-// older way of declaring variable : var
-var score = 75;
-console.log(score);
+// getting characters
+console.log(fullName[2]);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+
+let result = fullName.toLowerCase();
+console.log(result);
+
+console.log(fullName); // nothing altered
+
+let index = email.indexOf('@');
+console.log(index);
+
