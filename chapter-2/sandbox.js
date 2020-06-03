@@ -1,13 +1,38 @@
-// common string methods
+let radius = 10;
+const pi = 3.14;
 
-let email = "mark@example.email.com";
+// console.log(radius, pi);
 
-// let result = email.lastIndexOf('l'); // finds the last instance of argument
+// math operators +, -, *, /, **, %
 
-// let result = email.slice(0,10); // takes out a section from string
+// console.log(10 / 2);
+// let result = radius % 3;
+// let result = pi * radius**2;
 
-// let result = email.substr(4,10); // starts from index of first argument and goes as long as the second 
+// order of operation - PEMDAS
+// let result = 5 * (10-3)**2;
 
-// let result = email.replace('m', 'w'); // only replaces the first instance
+
+let likes = 10;
+
+likes++;
+console.log(likes); // 11
+
+likes+=10;
+console.log(likes); // 21
+
+likes-=5;
+console.log(likes); // 16
+
+likes*=2;
+console.log(likes); // 32
+
+
+// NaN - not a number
+console.log(5 / 'hello'); // NaN
+
+
+// concatenate strings and numbers
+let result = 'the blog has ' + likes + ' likes';
 
 console.log(result);
