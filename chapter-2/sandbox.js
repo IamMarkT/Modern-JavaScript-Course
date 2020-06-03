@@ -1,30 +1,13 @@
-// strings
-console.log('hello, world');
+// common string methods
 
-let email = 'markt1084@example.email.com'
-console.log(email);
+let email = "mark@example.email.com";
 
-//string concatentation
-let firstName = 'Mark';
-let lastName = 'Trinidad';
+// let result = email.lastIndexOf('l'); // finds the last instance of argument
 
-let fullName = firstName + " " + lastName;
-console.log(fullName);
+// let result = email.slice(0,10); // takes out a section from string
 
-// getting characters
-console.log(fullName[2]);
+// let result = email.substr(4,10); // starts from index of first argument and goes as long as the second 
 
-// string length
-console.log(fullName.length);
+// let result = email.replace('m', 'w'); // only replaces the first instance
 
-// string methods
-console.log(fullName.toUpperCase());
-
-let result = fullName.toLowerCase();
 console.log(result);
-
-console.log(fullName); // nothing altered
-
-let index = email.indexOf('@');
-console.log(index);
-
