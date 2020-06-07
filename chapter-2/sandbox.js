@@ -1,21 +1,24 @@
-// template string
-const title = 'Best reads of 2020';
-const author = 'Mark';
-const likes = 84;
+// 13) Arrays
+let ninjas = ['mark', 'sean', 'dennis'];
 
-// concatenation way
-// let result = 'The blog called ' + title + ' by ' + author + ' has ' +likes + ' likes.';
+// ninjas[0] = 'lester'
+// console.log(ninjas[0]);
 
-// template string way 
-    // back ticks = 'FN + esc' on Anne Pro 2
-let result = `The blog called ${title} by ${author} has ${likes} likes.`; 
+let ages = [20,25,30,35];
+console.log(ages[1]);
 
-// creating html templates
-let html = `
-<h2>${title}</h2>
-<p>By ${author}</p>
-<span>This blog has ${likes} likes. </span>
-`;
+
+let random = ['shaun', 'crystal', 25, 30];
+console.log(random);
+console.log(ninjas.length); // length in int
+
+// ARRAY METHODS
+
+// let result = ninjas.join(', '); // join creates string with seperator
+// let result = ninjas.indexOf('sean'); // returns int of where
+// let result = ninjas.concat(['ash', 'siri']); // concatenates arrays
+let result = ninjas.push('ken'); // returns length in int, but adds new value to array
+result = ninjas.pop(); // removes and returns last value in array
 
 console.log(result);
-console.log(html);
+
