@@ -1,17 +1,16 @@
-// 16) Loose vs Strict Comparison
+// 17) Type Conversion
 
-let age = 22;
+let score = '100';
+console.log(typeof score); // string
+console.log(score + 1); // 1001
 
-// loose comparison (different types can still be equal)
-console.log(age == 22); // true
-console.log(age == '22'); // true
+score = Number(score);
+console.log(typeof score); // number
+console.log(score + 1); // 101
 
-console.log(age != 22); // false
-console.log(age != '22'); //false
+// let result = Number('hello'); //NaN
+// let result = String(50); // '50'
+// let result = Boolean(100); // any num is true, but 0 is false
+let result = Boolean('0'); // strings of any length is true, but empty string is false
 
-// strict comparison (different types cannot be equal)
-console.log(age === 22); // true
-console.log(age === '22'); // false
-
-console.log(age !== 22); // false
-console.log(age !== '22'); // true
+console.log(result, typeof result);
