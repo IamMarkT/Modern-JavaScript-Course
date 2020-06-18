@@ -1,24 +1,33 @@
-// 13) Arrays
-let ninjas = ['mark', 'sean', 'dennis'];
+// 15) Booleans and Comparisons
+console.log(true, false);
 
-// ninjas[0] = 'lester'
-// console.log(ninjas[0]);
+// methods can return booleans
+let email = 'mark@yahoo.com';
+let names = ['mark', 'mario', 'luigi'];
 
-let ages = [20,25,30,35];
-console.log(ages[1]);
+// let result = email.includes('@');
+// let result = names.includes('luigi'); // true
+// let result = names.includes('bowser'); // false
 
+// console.log(result);
 
-let random = ['shaun', 'crystal', 25, 30];
-console.log(random);
-console.log(ninjas.length); // length in int
+// comparison operators
+let age = 22;
 
-// ARRAY METHODS
+// console.log(age == 22); // true
+// console.log(age == 30); // false
+// console.log(age != 22); // false
+// console.log(age != 30); // true
+// console.log(age > 20); // true
+// console.log(age < 20); // false
+// console.log(age <= 22); // true
+// console.log(age >= 22); // true
 
-// let result = ninjas.join(', '); // join creates string with seperator
-// let result = ninjas.indexOf('sean'); // returns int of where
-// let result = ninjas.concat(['ash', 'siri']); // concatenates arrays
-let result = ninjas.push('ken'); // returns length in int, but adds new value to array
-result = ninjas.pop(); // removes and returns last value in array
+let name = 'mark';
 
-console.log(result);
+console.log(name == 'mark'); // true
+console.log(name == 'Mark'); // false
 
+console.log(name > 'crystal'); // true 'm' is later than 'c' meaning its higher in value
+console.log(name > 'Crystal'); // true 'm' is later than 'C' meaning its higher in value
+console.log(name > 'Mark'); // true lowercase is greater than lowercase
