@@ -1,39 +1,16 @@
-// 27) switch statements
+// 28) variables and block scope
 
-const grade = 'A';
+const age = 30;
 
-// // using if statements
-// if(grade === 'A'){
+if(true) {
+    const age = 40;
+    const name = 'shaun';
+    console.log('inside 1st code block: ', age, name);
 
-// } else if (grade === 'B'){
-
-// }else if (grade === 'C'){
-    
-// }else if (grade === 'D'){
-    
-// }else if (grade === 'E'){
-    
-// }else {
-    
-// }
-
-// cases are STRICT evaluation
-switch(grade) {
-    case 'A':
-        console.log('you got an A!');
-        break;
-    case 'B':
-        console.log('you got a B!');
-        break;
-    case 'C':
-        console.log('you got a C!');
-                break;
-    case 'D':
-        console.log('you got a D!');
-                break;
-    case 'E':
-        console.log('you got an E!');
-                break;
-    default:
-        console.log('not a valid grade');
+    if(true){
+        const age = 50; 
+        console.log('inside 2nd code block: ', age);
+    }
 }
+
+console.log('outside code block: ', age, name);
