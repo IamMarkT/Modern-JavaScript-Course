@@ -1,17 +1,39 @@
-// 26) break and continue
+// 27) switch statements
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+const grade = 'A';
 
-for (let i=0; i < scores.length; i++)
-{
+// // using if statements
+// if(grade === 'A'){
 
-    if(scores[i] === 0){
-        continue;
-    }
-    console.log('your score: ', scores[i]);
+// } else if (grade === 'B'){
 
-    if(scores[i] === 100){
-        console.log('congrats, you got the top score!');
+// }else if (grade === 'C'){
+    
+// }else if (grade === 'D'){
+    
+// }else if (grade === 'E'){
+    
+// }else {
+    
+// }
+
+// cases are STRICT evaluation
+switch(grade) {
+    case 'A':
+        console.log('you got an A!');
         break;
-    }
+    case 'B':
+        console.log('you got a B!');
+        break;
+    case 'C':
+        console.log('you got a C!');
+                break;
+    case 'D':
+        console.log('you got a D!');
+                break;
+    case 'E':
+        console.log('you got an E!');
+                break;
+    default:
+        console.log('not a valid grade');
 }
