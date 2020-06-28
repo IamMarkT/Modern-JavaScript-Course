@@ -1,17 +1,10 @@
-// 20) while loop
+// 21) do-while loop
 
-const names =['mark', 'mario', 'luigi'];
-// let i = 0;
+let i = 2;
 
-// while(i < 5)
-// {
-//     console.log('in loop:', i);
-//     i++;
-// } 
-
-let i = 0;
-while (i < names.length)
+do
 {
-    console.log(names[i]);
+    console.log('val of i is: ', i);
     i++;
 }
+while(i < 5);
