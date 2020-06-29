@@ -1,18 +1,9 @@
-// function declaration
-function greet(){
-    console.log('hello there');
-}
+// 31) Arguments and parameters
 
-// function expression
-const speak = function(){
-    console.log('good day!');
-
+const speak = function(name = 'luigi', time = 'day'){
+    console.log(`good ${time}, ${name}!`);
 };
 
-speak();
-speak();
-speak();
 
-greet();
-greet();
-greet();
+speak('Mark', 'morning');
+speak();
