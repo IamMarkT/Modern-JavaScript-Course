@@ -1,25 +1,15 @@
-// 35) Foreach Method and Callbacks
+// 36) Callback Functions in Action
 
-// const myFunc = (callbackFunc) => {
-//     // do something
-//     let value = 50;
-//     callbackFunc(value);
-// };
+const ul = document.querySelector('.people');
 
-// myFunc(value => {
-//     //do something
-//     console.log(value);
-// });
+const people = ['mark', 'mario', 'luigi', 'siri', 'alexa'];
 
-let people = ["mark", "mario", "luigi", "shaun"];
+let html = ``;
 
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`);
-};
+people.forEach(person => {
+    // create html template
+    html += `<li style="color: purple">${person}</li>`;
+});
 
-
-// people.forEach((person, index) => {
-//     console.log(index, person);
-// });
-
-people.forEach(logPerson);
+console.log(html);
+ul.innerHTML = html;
