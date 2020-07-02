@@ -1,11 +1,25 @@
-const name = 'mark';
+// 35) Foreach Method and Callbacks
 
-// functions
-const greet = () => 'hello';
+// const myFunc = (callbackFunc) => {
+//     // do something
+//     let value = 50;
+//     callbackFunc(value);
+// };
 
-let resultOne = greet();
-console.log(resultOne);
+// myFunc(value => {
+//     //do something
+//     console.log(value);
+// });
 
-// methods
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+let people = ["mark", "mario", "luigi", "shaun"];
+
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`);
+};
+
+
+// people.forEach((person, index) => {
+//     console.log(index, person);
+// });
+
+people.forEach(logPerson);
