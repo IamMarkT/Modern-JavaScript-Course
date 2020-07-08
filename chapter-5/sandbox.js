@@ -1,18 +1,23 @@
-// 42) Math object
+// 43) primative vs reference types
 
-// console.log(Math);
-// console.log(Math.PI);
-// console.log(Math.E);
+// primative values, will change values
 
-const area = 7.78;
-console.log(Math.round(area));
-console.log(Math.floor(area));
-console.log(Math.ceil(area));
-console.log(Math.trunc(area));
+let scoreOne = 50;
+let scoreTwo = scoreOne;
 
-// random numbers
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-const random = Math.random();
+scoreOne = 84;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-console.log(random);
-console.log(Math.round(random * 100));
+
+
+// reference value, won't change values because of pointers
+
+userOne = { name : 'mark', age : 22};
+const userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+userOne.age = 40;
+console.log(userOne, userTwo);
