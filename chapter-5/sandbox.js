@@ -1,23 +1,24 @@
-// 38) object literals
+// 39) adding methods
 
 let user = {
     name: 'mark', // key: value
     age: 22, 
     email: 'markt1084@gmail.com',
     location: 'orlando',
-    blogs: ['why mac & cheese rules', '10 rules to life']
+    blogs: ['why mac & cheese rules', '10 rules to life'],
+    login : function(){
+        console.log('the user logged in');
+    },
+    logout : function(){
+        console.log('the user looged out');
+    },
+    logBlogs: function(){
+
+    }
 };
 
-console.log(user);
-console.log(user.name);
+user.login();
+user.logout();
 
-user.age = 35;
-console.log(user.age);
-
-const key = 'location';
-console.log(user[key]);
-
-user['name'] = 'lester';
-console.log(user['name']);
-
-console.log(typeof user); // object
+const name = 'mark';
+name.toUpperCase();
