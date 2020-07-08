@@ -1,28 +1,36 @@
-// 40) 'this' keyword
+// 41) Objects in Arrays
+
+// const blogs = [
+//     {title: 'why mac & cheese rules', likes: 30},
+//     {title: '10 rules to life', likes: 84},
+// ];
+
+// console.log(blogs);
 
 let user = {
-    name: 'mark', // key: value
+    name: 'mark',
     age: 22, 
     email: 'markt1084@gmail.com',
     location: 'orlando',
-    blogs: ['why mac & cheese rules', '10 rules to life'],
+    blogs: [
+        { title: 'why mac & cheese rules', likes: 30},
+        { title: '10 rules to life', likes: 84},
+    ],
+
+
     login : function(){
         console.log('the user logged in');
     },
-    logout(){ // SAME AS logout : function(){
+    logout(){
         console.log('the user looged out');
     },
     logBlogs(){ 
-        // when this is used has to be function notation
-        // not arrow notation
 
-        // console.log(this.blogs);
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         });
     }
 };
 
 user.logBlogs();
-// console.log(this);
