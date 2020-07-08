@@ -1,36 +1,19 @@
-// 41) Objects in Arrays
+// 42) Math object
 
-// const blogs = [
-//     {title: 'why mac & cheese rules', likes: 30},
-//     {title: '10 rules to life', likes: 84},
-// ];
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-// console.log(blogs);
+const area = 7.78;
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
 
-let user = {
-    name: 'mark',
-    age: 22, 
-    email: 'markt1084@gmail.com',
-    location: 'orlando',
-    blogs: [
-        { title: 'why mac & cheese rules', likes: 30},
-        { title: '10 rules to life', likes: 84},
-    ],
+// random numbers
 
+const random = Math.random();
 
-    login : function(){
-        console.log('the user logged in');
-    },
-    logout(){
-        console.log('the user looged out');
-    },
-    logBlogs(){ 
+console.log(random);
+console.log(Math.round(random * 100));
 
-        console.log('this user has written the following blogs:');
-        this.blogs.forEach(blog => {
-            console.log(blog.title, blog.likes);
-        });
-    }
-};
-
-user.logBlogs();
