@@ -1,4 +1,4 @@
-// 39) adding methods
+// 40) 'this' keyword
 
 let user = {
     name: 'mark', // key: value
@@ -9,16 +9,20 @@ let user = {
     login : function(){
         console.log('the user logged in');
     },
-    logout : function(){
+    logout(){ // SAME AS logout : function(){
         console.log('the user looged out');
     },
-    logBlogs: function(){
+    logBlogs(){ 
+        // when this is used has to be function notation
+        // not arrow notation
 
+        // console.log(this.blogs);
+        console.log('this user has written the following blogs:');
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        });
     }
 };
 
-user.login();
-user.logout();
-
-const name = 'mark';
-name.toUpperCase();
+user.logBlogs();
+// console.log(this);
