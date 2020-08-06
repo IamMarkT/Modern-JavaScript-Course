@@ -1,16 +1,16 @@
-// changable variable : let
-let age = 22;
-let year = 2020;
+// 17) Type Conversion
 
-console.log(age, year);
+let score = '100';
+console.log(typeof score); // string
+console.log(score + 1); // 1001
 
-age = 30;
-console.log(age, year);
+score = Number(score);
+console.log(typeof score); // number
+console.log(score + 1); // 101
 
-// NONchangable variable : const
-const points = 100;
-console.log(points);
+// let result = Number('hello'); //NaN
+// let result = String(50); // '50'
+// let result = Boolean(100); // any num is true, but 0 is false
+let result = Boolean('0'); // strings of any length is true, but empty string is false
 
-// older way of declaring variable : var
-var score = 75;
-console.log(score);
+console.log(result, typeof result);
